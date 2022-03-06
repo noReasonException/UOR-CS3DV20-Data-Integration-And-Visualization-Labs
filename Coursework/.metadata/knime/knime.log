@@ -1,0 +1,616 @@
+2022-03-05 17:49:15,582 : WARN  : main :  : Node : File Reader : 3:1 : Please specify a file
+2022-03-05 17:49:41,227 : WARN  : AWT-EventQueue-0 :  : NioFile : File Reader : 3:1 : Could not get last modified time of '/Users/stefanosstefanou/Desktop/UOR-CS3DV20-Data-Integration-And-Visualization-Labs/Coursework/data/Lupita_Coffee_v2.0.xlsx': /Users/stefanosstefanou/Desktop/UOR-CS3DV20-Data-Integration-And-Visualization-Labs/Coursework/data/Lupita_Coffee_v2.0.xlsx
+2022-03-05 17:49:41,253 : WARN  : AWT-EventQueue-0 :  : NioFile : File Reader : 3:1 : Could not get last modified time of '/Users/stefanosstefanou/Desktop/UOR-CS3DV20-Data-Integration-And-Visualization-Labs/Coursework/data/Lupita_Coffee_v2.0.xlsx': /Users/stefanosstefanou/Desktop/UOR-CS3DV20-Data-Integration-And-Visualization-Labs/Coursework/data/Lupita_Coffee_v2.0.xlsx
+2022-03-05 17:50:13,911 : ERROR : KNIME-Worker-3-File Reader 3:1 :  : Node : File Reader : 3:1 : Execute failed: The data row has too few data elements.
+java.lang.IllegalArgumentException: The data row has too few data elements.
+	at org.knime.core.node.util.CheckUtils.checkArgument(CheckUtils.java:255)
+	at org.knime.core.node.util.CheckUtils.checkArgument(CheckUtils.java:116)
+	at org.knime.filehandling.core.node.table.reader.read.CheckSameSizeRead.next(CheckSameSizeRead.java:83)
+	at org.knime.filehandling.core.node.table.reader.read.SkipIdxRead.next(SkipIdxRead.java:85)
+	at org.knime.filehandling.core.node.table.reader.DefaultIndividualTableReader.fillOutputWithProgress(DefaultIndividualTableReader.java:142)
+	at org.knime.filehandling.core.node.table.reader.DefaultIndividualTableReader.fillOutput(DefaultIndividualTableReader.java:121)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableRead.fillRowOutput(DefaultMultiTableRead.java:135)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.fillRowOutput(MultiTableReader.java:90)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.readTable(MultiTableReader.java:173)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:160)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-03-05 18:15:41,586 : WARN  : main :  : Node : Column Rename : 0:8 : No configuration available
+2022-03-05 18:15:47,411 : WARN  : main :  : Node : Column Rename : 0:9 : No configuration available
+2022-03-05 18:18:11,363 : WARN  : main :  : WrappedNodeDialog : Concatenate : 0:7 : failed to apply settings: Invalid suffix: 
+org.knime.core.node.InvalidSettingsException: Invalid suffix: 
+	at org.knime.base.node.preproc.append.row.AppendedRowsNodeModel.validateSettings(AppendedRowsNodeModel.java:419)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:692)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1100)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:913)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1975)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1087)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:635)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:510)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4441)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1324)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4227)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3837)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:945)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:852)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:147)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5048)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4441)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1324)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4227)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3837)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:183)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2022-03-05 18:19:50,680 : WARN  : main :  : ExplorerFileSystemUtils :  :  : At least one of the workflows affected by the operation is still open in the editor and has to be saved first.
+2022-03-05 18:19:50,681 : WARN  : main :  : PasteFromClipboardAction :  :  : Can't paste from clipboard: At least one of the workflows affected by the operation is still open in the editor and has to be saved first.
+2022-03-05 18:55:13,115 : WARN  : main :  : ExplorerFileSystemUtils :  :  : At least one of the workflows affected by the operation is still open in the editor and has to be saved first.
+2022-03-05 18:55:13,117 : WARN  : main :  : PasteFromClipboardAction :  :  : Can't paste from clipboard: At least one of the workflows affected by the operation is still open in the editor and has to be saved first.
+2022-03-05 18:58:16,511 : WARN  : main :  : Node : GroupBy : 3:4 : No grouping column included. Aggregate complete table.
+2022-03-05 18:58:16,512 : WARN  : main :  : Node : GroupBy : 3:4 : No aggregation column defined
+2022-03-05 18:58:16,512 : WARN  : main :  : Node : GroupBy : 3:4 : No aggregation column defined
+2022-03-05 18:58:16,570 : WARN  : main :  : Node : GroupBy : 3:4 : Please select at least one group or aggregation column
+2022-03-05 19:18:51,386 : WARN  : main :  : ExplorerFileSystemUtils :  :  : At least one of the workflows affected by the operation is still open in the editor and has to be closed first.
+2022-03-05 19:18:52,791 : WARN  : main :  : LocalWorkspaceContentProvider :  :  : At least one of the workflows affected by the operation is still open in the editor and has to be closed first.
+2022-03-05 19:18:56,066 : WARN  : main :  : ExplorerFileSystemUtils :  :  : At least one of the workflows affected by the operation is still open in the editor and has to be closed first.
+2022-03-05 19:18:57,066 : WARN  : main :  : LocalWorkspaceContentProvider :  :  : At least one of the workflows affected by the operation is still open in the editor and has to be closed first.
+2022-03-05 19:25:33,623 : WARN  : main :  : ExplorerFileSystemUtils :  :  : At least one of the workflows affected by the operation is still open in the editor and has to be saved first.
+2022-03-05 19:25:33,623 : WARN  : main :  : PasteFromClipboardAction :  :  : Can't paste from clipboard: At least one of the workflows affected by the operation is still open in the editor and has to be saved first.
+2022-03-05 19:25:47,147 : ERROR : KNIME Sync Exec Dispatcher-1 :  : SyncExecQueueDispatcher :  :  : Uncaught exception while queuing events into main thread
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4889)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.SWT.error(SWT.java:4775)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1100)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1434)
+	at org.knime.workbench.ui.SyncExecQueueDispatcher$2.run(SyncExecQueueDispatcher.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-05 19:25:47,148 : ERROR : KNIME Sync Exec Dispatcher-2 :  : SyncExecQueueDispatcher :  :  : Uncaught exception while queuing events into main thread
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4889)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.SWT.error(SWT.java:4775)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1100)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1434)
+	at org.knime.workbench.ui.SyncExecQueueDispatcher$2.run(SyncExecQueueDispatcher.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-05 19:25:47,148 : ERROR : KNIME Sync Exec Dispatcher-3 :  : SyncExecQueueDispatcher :  :  : Uncaught exception while queuing events into main thread
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4889)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.SWT.error(SWT.java:4775)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1100)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1434)
+	at org.knime.workbench.ui.SyncExecQueueDispatcher$2.run(SyncExecQueueDispatcher.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-05 19:25:47,149 : ERROR : KNIME Sync Exec Dispatcher-4 :  : SyncExecQueueDispatcher :  :  : Uncaught exception while queuing events into main thread
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4889)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.SWT.error(SWT.java:4775)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1100)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1434)
+	at org.knime.workbench.ui.SyncExecQueueDispatcher$2.run(SyncExecQueueDispatcher.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-05 19:25:47,150 : ERROR : KNIME Sync Exec Dispatcher-5 :  : SyncExecQueueDispatcher :  :  : Uncaught exception while queuing events into main thread
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4889)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.SWT.error(SWT.java:4775)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1100)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1434)
+	at org.knime.workbench.ui.SyncExecQueueDispatcher$2.run(SyncExecQueueDispatcher.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-05 19:25:47,150 : ERROR : KNIME Sync Exec Dispatcher-6 :  : SyncExecQueueDispatcher :  :  : Uncaught exception while queuing events into main thread
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4889)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.SWT.error(SWT.java:4775)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1100)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1434)
+	at org.knime.workbench.ui.SyncExecQueueDispatcher$2.run(SyncExecQueueDispatcher.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-05 19:25:47,151 : ERROR : KNIME Sync Exec Dispatcher-7 :  : SyncExecQueueDispatcher :  :  : Uncaught exception while queuing events into main thread
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4889)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.SWT.error(SWT.java:4775)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1100)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1434)
+	at org.knime.workbench.ui.SyncExecQueueDispatcher$2.run(SyncExecQueueDispatcher.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-05 19:25:47,151 : ERROR : KNIME Sync Exec Dispatcher-8 :  : SyncExecQueueDispatcher :  :  : Uncaught exception while queuing events into main thread
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4889)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.SWT.error(SWT.java:4775)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1100)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1434)
+	at org.knime.workbench.ui.SyncExecQueueDispatcher$2.run(SyncExecQueueDispatcher.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-05 19:25:47,151 : ERROR : KNIME Sync Exec Dispatcher-9 :  : SyncExecQueueDispatcher :  :  : Uncaught exception while queuing events into main thread
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4889)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.SWT.error(SWT.java:4775)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1100)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1434)
+	at org.knime.workbench.ui.SyncExecQueueDispatcher$2.run(SyncExecQueueDispatcher.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-05 19:47:33,711 : ERROR : KNIME-Worker-23-Histogram 3:3 :  : Node : Histogram : 3:3 : Execute failed: No column selected for binning.
+java.lang.IllegalArgumentException: No column selected for binning.
+	at org.knime.dynamic.js.base.grouped.BinningProcessor.processInputObjects(BinningProcessor.java:72)
+	at org.knime.dynamic.js.v30.DynamicJSNodeModel.performExecuteCreateView(DynamicJSNodeModel.java:655)
+	at org.knime.js.core.node.AbstractImageWizardNodeModel.performExecute(AbstractImageWizardNodeModel.java:102)
+	at org.knime.js.core.node.AbstractWizardNodeModel.execute(AbstractWizardNodeModel.java:137)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-03-05 21:04:21,050 : WARN  : main :  : Node : Math Formula : 3:3 : No configuration available
+2022-03-05 21:09:13,818 : WARN  : main :  : Node : Math Formula : 4:3 : No such column: Budget Sales
+2022-03-05 21:09:14,764 : WARN  : main :  : Node : Math Formula : 4:3 : No such column: Budget Sales
+2022-03-05 22:50:00,676 : ERROR : KNIME-Worker-38-File Reader 5:1 :  : Node : File Reader : 5:1 : Execute failed: The data row has too many data elements.
+java.lang.IllegalArgumentException: The data row has too many data elements.
+	at org.knime.core.node.util.CheckUtils.checkArgument(CheckUtils.java:255)
+	at org.knime.core.node.util.CheckUtils.checkArgument(CheckUtils.java:116)
+	at org.knime.filehandling.core.node.table.reader.read.CheckSameSizeRead.next(CheckSameSizeRead.java:84)
+	at org.knime.filehandling.core.node.table.reader.read.SkipIdxRead.next(SkipIdxRead.java:85)
+	at org.knime.filehandling.core.node.table.reader.DefaultIndividualTableReader.fillOutputWithProgress(DefaultIndividualTableReader.java:142)
+	at org.knime.filehandling.core.node.table.reader.DefaultIndividualTableReader.fillOutput(DefaultIndividualTableReader.java:121)
+	at org.knime.filehandling.core.node.table.reader.DefaultMultiTableRead.fillRowOutput(DefaultMultiTableRead.java:135)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.fillRowOutput(MultiTableReader.java:90)
+	at org.knime.filehandling.core.node.table.reader.MultiTableReader.readTable(MultiTableReader.java:173)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:160)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-03-05 23:30:35,771 : WARN  : AWT-EventQueue-0 :  : NioFile : File Reader : 5:1 : Could not get last modified time of '/data/dummy/01.csv': /data/dummy/01.csv
+2022-03-05 23:30:35,795 : WARN  : AWT-EventQueue-0 :  : NioFile : File Reader : 5:1 : Could not get last modified time of '/data/dummy/01.csv': /data/dummy/01.csv
+2022-03-06 19:26:43,256 : WARN  : main :  : Node : Row Filter : 0:2 : No row filter specified
+2022-03-06 19:27:21,608 : WARN  : KNIME-Worker-11-Row Filter 0:2 :  : Node : Row Filter : 0:2 : Node created an empty data table.
+2022-03-06 19:27:57,913 : WARN  : main :  : Node : Math Formula : 0:4 : No configuration available
+2022-03-06 19:28:31,880 : WARN  : main :  : Node : String Manipulation : 0:4 : No expression has been set.
+2022-03-06 19:29:33,080 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 0:4 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Invalid character constant
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return regexReplace(__col0,'2019','2020');
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Invalid character constant
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return regexReplace(__col0,'2019','2020');
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Invalid character constant
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return regexReplace(__col0,'2019','2020');
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-03-06 19:29:41,223 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 0:4 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Invalid character constant
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return regexReplace(__col0,'2019','2020');
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Invalid character constant
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return regexReplace(__col0,'2019','2020');
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Invalid character constant
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return regexReplace(__col0,'2019','2020');
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-03-06 19:30:57,430 : WARN  : main :  : Node : RowID : 0:6 : No row key column selected generate a new one
+2022-03-06 19:31:01,019 : WARN  : main :  : Node : RowID : 0:5 : No row key column selected generate a new one
+2022-03-06 19:34:26,812 : WARN  : main :  : Node : String Manipulation : 0:8 : No expression has been set.
+2022-03-06 19:36:57,015 : WARN  : main :  : Node : Histogram (local) : 0:10 : Please define the binning column.
+2022-03-06 19:37:25,098 : WARN  : main :  : Node : Histogram (local) : 0:10 : Please define the binning column.
+2022-03-06 19:37:25,636 : WARN  : main :  : Node : Histogram (local) : 0:10 : Please define the binning column.
+2022-03-06 19:37:28,640 : WARN  : main :  : Node : Histogram (local) : 0:10 : Please define the binning column.
+2022-03-06 19:37:29,855 : WARN  : main :  : Node : Histogram (local) : 0:10 : Please define the binning column.
+2022-03-06 19:37:32,402 : WARN  : KNIME-Worker-22-String Manipulation 0:9 :  : Node : Histogram (local) : 0:10 : Please define the binning column.
+2022-03-06 19:38:03,964 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 19:38:10,943 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 19:38:21,347 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 19:38:22,210 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 19:38:43,103 : WARN  : main :  : Node : RowID : 0:15 : No row key column selected generate a new one
+2022-03-06 19:38:51,614 : WARN  : main :  : Node : RowID : 0:15 : No row key column selected generate a new one
+2022-03-06 19:38:52,232 : WARN  : main :  : Node : RowID : 0:15 : No row key column selected generate a new one
+2022-03-06 20:24:43,156 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 0:13 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return regexReplace(__col0,".*/2019" ,"2019")
+
+ERROR at line 67
+Syntax error, insert ";" to complete Statement
+  Line : 66  return regexReplace(__col0,".*/2019" ,"2019")
+  Line : 67  regexReplace(__col0,".*/2018" ,"2018")
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return regexReplace(__col0,".*/2019" ,"2019")
+
+ERROR at line 67
+Syntax error, insert ";" to complete Statement
+  Line : 66  return regexReplace(__col0,".*/2019" ,"2019")
+  Line : 67  regexReplace(__col0,".*/2018" ,"2018")
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return regexReplace(__col0,".*/2019" ,"2019")
+
+ERROR at line 67
+Syntax error, insert ";" to complete Statement
+  Line : 66  return regexReplace(__col0,".*/2019" ,"2019")
+  Line : 67  regexReplace(__col0,".*/2018" ,"2018")
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-03-06 20:24:51,413 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 0:13 : failed to apply settings: Unable to compile expression
+ERROR at line 67
+Unreachable code
+  Line : 66  return regexReplace(__col0,".*/2019" ,"2019");
+  Line : 67  regexReplace(__col0,".*/2018" ,"2018");
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 67
+Unreachable code
+  Line : 66  return regexReplace(__col0,".*/2019" ,"2019");
+  Line : 67  regexReplace(__col0,".*/2018" ,"2018");
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 67
+Unreachable code
+  Line : 66  return regexReplace(__col0,".*/2019" ,"2019");
+  Line : 67  regexReplace(__col0,".*/2018" ,"2018");
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-03-06 20:25:22,488 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 20:25:23,416 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 20:25:36,903 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 20:25:37,688 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 20:25:41,717 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 20:25:42,053 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 20:26:50,959 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 20:37:04,878 : WARN  : main :  : Node : Column Rename : 0:21 : No configuration available
+2022-03-06 20:39:00,427 : WARN  : main :  : Node : Row Filter : 0:22 : No row filter specified
+2022-03-06 20:39:36,945 : WARN  : KNIME-Worker-50-Missing Value 0:22 :  : Node : Missing Value : 0:22 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-03-06 20:39:55,369 : WARN  : main :  : Node : RowID : 0:23 : No row key column selected generate a new one
+2022-03-06 20:39:58,443 : WARN  : main :  : Node : RowID : 0:23 : No row key column selected generate a new one
+2022-03-06 20:39:58,836 : WARN  : main :  : Node : RowID : 0:23 : No row key column selected generate a new one
+2022-03-06 20:40:27,602 : WARN  : main :  : Node : Math Formula : 0:24 : No configuration available
+2022-03-06 20:42:14,475 : WARN  : main :  : Node : Row Filter : 0:25 : No row filter specified
+2022-03-06 20:47:01,533 : WARN  : main :  : Node : Row Filter : 0:28 : No row filter specified
+2022-03-06 20:47:47,067 : WARN  : main :  : Node : Math Formula : 0:29 : No configuration available
+2022-03-06 21:06:30,424 : WARN  : main :  : Node : Column Rename : 0:32 : The following columns are configured but no longer exist: "Coffee, tea and cocoa purchase trend in the United Kingdom 2005-2020"
+2022-03-06 21:06:30,425 : WARN  : main :  : Node : RowID : 0:37 : No row key column selected generate a new one
+2022-03-06 21:06:30,425 : WARN  : main :  : Node : Row Filter : 0:34 : Column range filter: Input table doesn't contain specified column name
+2022-03-06 21:07:14,422 : WARN  : main :  : Node : RowID : 0:37 : No row key column selected generate a new one
+2022-03-06 21:07:14,949 : WARN  : main :  : Node : RowID : 0:37 : No row key column selected generate a new one
+2022-03-06 21:07:30,957 : WARN  : KNIME-Worker-74-Missing Value 0:36 :  : Node : Missing Value : 0:36 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+Column "year" still contains missing values.
+2022-03-06 21:07:30,959 : WARN  : KNIME-Worker-74-Missing Value 0:36 :  : Node : RowID : 0:37 : No row key column selected generate a new one
+2022-03-06 21:07:44,899 : WARN  : main :  : Node : RowID : 0:37 : No row key column selected generate a new one
+2022-03-06 21:07:45,269 : WARN  : main :  : Node : RowID : 0:37 : No row key column selected generate a new one
+2022-03-06 21:07:50,664 : WARN  : KNIME-Worker-76-Missing Value 0:36 :  : Node : Missing Value : 0:36 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-03-06 21:07:50,666 : WARN  : KNIME-Worker-76-Missing Value 0:36 :  : Node : RowID : 0:37 : No row key column selected generate a new one
+2022-03-06 21:08:04,605 : WARN  : main :  : Node : RowID : 0:37 : No row key column selected generate a new one
+2022-03-06 21:08:05,062 : WARN  : main :  : Node : RowID : 0:37 : No row key column selected generate a new one
+2022-03-06 21:08:09,163 : WARN  : KNIME-Worker-79-Missing Value 0:36 :  : Node : Missing Value : 0:36 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-03-06 21:08:09,166 : WARN  : KNIME-Worker-79-Missing Value 0:36 :  : Node : RowID : 0:37 : No row key column selected generate a new one
+2022-03-06 21:08:49,829 : WARN  : KNIME-Worker-78-Row Filter 0:33 :  : Node : Row Filter : 0:33 : Node created an empty data table.
+2022-03-06 21:09:34,293 : WARN  : main :  : Node : Math Formula : 0:38 : No such column: Row15
+2022-03-06 21:09:41,805 : WARN  : main :  : WrappedNodeDialog : Math Formula : 0:38 : failed to apply settings: No such column: Row15
+org.knime.core.node.InvalidSettingsException: No such column: Row15
+	at org.knime.ext.jep.ExpressionParser.handleColumn(ExpressionParser.java:348)
+	at org.knime.ext.jep.ExpressionParser.dollarFound(ExpressionParser.java:264)
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:171)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.JEPNodeDialogPane.saveSettingsTo(JEPNodeDialogPane.java:354)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-03-06 21:30:07,701 : WARN  : main :  : Node : RowID : 0:40 : No row key column selected generate a new one
+2022-03-06 21:30:41,684 : WARN  : main :  : Node : Row Filter : 0:40 : No row filter specified
+2022-03-06 21:30:57,149 : WARN  : main :  : Node : Column Rename : 0:40 : The following columns are configured but no longer exist: "Advertising spending in the United Kingdom (UK) 2010-2020", "Column1"
+2022-03-06 21:31:00,815 : WARN  : KNIME-Worker-85-Column Rename 0:40 :  : Node : Column Rename : 0:40 : The following columns are configured but no longer exist: "Advertising spending in the United Kingdom (UK) 2010-2020", "Column1"
+2022-03-06 21:31:57,704 : WARN  : main :  : Node : Row Filter : 0:41 : Column value filter: Specified lower bound of range doesn't fit column type. (Col#:0,ColType:String,RangeType:Number (integer)
+2022-03-06 21:34:42,977 : WARN  : main :  : Node : Row Filter : 0:45 : No row filter specified
+2022-03-06 21:35:44,708 : WARN  : main :  : Node : Math Formula : 0:46 : No configuration available
+2022-03-06 21:36:42,549 : WARN  : main :  : Node : Math Formula : 0:46 : No configuration available
+2022-03-06 21:36:45,839 : WARN  : main :  : Node : Math Formula : 0:46 : No configuration available
+2022-03-06 21:36:46,241 : WARN  : main :  : Node : Math Formula : 0:46 : No configuration available
+2022-03-06 22:05:31,393 : WARN  : main :  : Node : Table Column to Variable : 0:48 : Auto-guessing: Selected column 'Row14'
+2022-03-06 22:07:16,538 : WARN  : main :  : Node : Table Column to Variable : 0:49 : The selected column 'sales-change' is not part of the input
+2022-03-06 22:07:35,213 : WARN  : main :  : Node : Table Column to Variable : 0:50 : The selected column 'marketing-budget-change' is not part of the input
+2022-03-06 22:08:23,938 : WARN  : main :  : Node : Math Formula : 0:51 : No such column: Row15
+2022-03-06 22:09:05,023 : WARN  : main :  : Node : Math Formula : 0:51 : No such column: Row15
+2022-03-06 22:09:05,023 : WARN  : main :  : Node : Math Formula : 0:51 : No such column: Row15
+2022-03-06 22:10:46,070 : WARN  : main :  : Node : Math Formula : 0:51 : No such column: Row15
+2022-03-06 22:12:12,404 : WARN  : main :  : Node : Math Formula : 0:51 : No such column: Row15
+2022-03-06 22:12:12,404 : WARN  : main :  : Node : Math Formula (Multi Column) : 0:54 : No configuration available
+2022-03-06 22:12:12,405 : WARN  : main :  : Node : Math Formula (Multi Column) : 0:54 : No configuration available
+2022-03-06 22:14:04,884 : WARN  : main :  : WrappedNodeDialog : Math Formula (Multi Column) : 0:54 : failed to apply settings: Unable to parse m_expression
+No expression entered
+
+org.knime.core.node.InvalidSettingsException: Unable to parse m_expression
+No expression entered
+
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:179)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.multicolumn.MultiColumnJEPNodeModel.createParsersForSelectedColumns(MultiColumnJEPNodeModel.java:301)
+	at org.knime.ext.jep.multicolumn.MultiColumnJEPNodeDialogPane.saveSettingsTo(MultiColumnJEPNodeDialogPane.java:323)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-03-06 22:15:34,085 : WARN  : KNIME-Worker-105-Table Column to Variable 0:48 :  : Node : Math Formula (Multi Column) : 0:54 : No configuration available
+2022-03-06 22:16:22,527 : WARN  : main :  : Node : Math Formula (Multi Column) : 0:55 : No configuration available
+2022-03-06 22:16:25,331 : WARN  : main :  : Node : Math Formula (Multi Column) : 0:55 : No configuration available
+2022-03-06 22:16:47,386 : WARN  : main :  : Node : Math Formula (Multi Column) : 0:55 : No configuration available
+2022-03-06 22:16:47,387 : WARN  : main :  : Node : Math Formula : 0:57 : No configuration available
+2022-03-06 22:17:09,519 : WARN  : main :  : Node : Math Formula : 0:58 : No configuration available
+2022-03-06 22:17:10,250 : WARN  : main :  : Node : Math Formula : 0:58 : No configuration available
+2022-03-06 22:18:40,508 : WARN  : main :  : Node : RowID : 0:60 : No row key column selected generate a new one
+2022-03-06 22:18:45,993 : WARN  : main :  : Node : RowID : 0:60 : No row key column selected generate a new one
+2022-03-06 22:18:46,416 : WARN  : main :  : Node : RowID : 0:60 : No row key column selected generate a new one
+2022-03-06 22:19:02,362 : WARN  : KNIME-Worker-110-Table Column to Variable 0:49 :  : Node : RowID : 0:60 : No row key column selected generate a new one
+2022-03-06 22:19:02,386 : WARN  : KNIME-Worker-113-Math Formula 0:58 :  : Node : RowID : 0:60 : No row key column selected generate a new one
+2022-03-06 22:19:02,387 : WARN  : KNIME-Worker-114-Concatenate 0:59 :  : Node : RowID : 0:60 : No row key column selected generate a new one
+2022-03-06 22:19:55,965 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 22:27:59,214 : WARN  : main :  : Node : Histogram (local) : 0:61 : Please define the binning column.
+2022-03-06 22:28:31,970 : WARN  : main :  : Node : GroupBy : 0:61 : No grouping column included. Aggregate complete table.
+2022-03-06 22:28:31,970 : WARN  : main :  : Node : GroupBy : 0:61 : No aggregation column defined
+2022-03-06 22:28:31,970 : WARN  : main :  : Node : GroupBy : 0:61 : No aggregation column defined
+2022-03-06 22:28:32,026 : WARN  : main :  : Node : GroupBy : 0:61 : Please select at least one group or aggregation column
+2022-03-06 22:47:53,443 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
+2022-03-06 22:48:01,000 : WARN  : main :  : Node : Histogram (local) : 0:11 : Binning column has invalid or no domain
