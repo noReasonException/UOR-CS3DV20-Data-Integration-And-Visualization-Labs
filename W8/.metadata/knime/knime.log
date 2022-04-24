@@ -1,0 +1,398 @@
+2022-04-24 20:16:00,171 : WARN  : Worker-2: Downloading statistics for node recommendations. :  : WorkflowCoachView :  :  : Could not update node recommendations statistics.
+java.net.UnknownHostException: update.knime.com
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketImpl.<init>(Unknown Source)
+	at java.base/sun.security.ssl.SSLSocketFactoryImpl.createSocket(Unknown Source)
+	at org.apache.commons.httpclient.protocol.SSLProtocolSocketFactory.createSocket(SSLProtocolSocketFactory.java:82)
+	at org.apache.commons.httpclient.protocol.ControllerThreadSocketFactory$1.doit(ControllerThreadSocketFactory.java:91)
+	at org.apache.commons.httpclient.protocol.ControllerThreadSocketFactory$SocketTask.run(ControllerThreadSocketFactory.java:158)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-04-24 20:38:09,566 : WARN  : ModalContext :  : Node : MISSING Tableau Writer : 0:1 : Node can't be executed - Node "Tableau Writer" not available from extension "KNIME Tableau Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.tableau.hyperapi" is not installed)
+2022-04-24 20:38:09,572 : WARN  : ModalContext :  : Node : Excel Reader (XLS) (deprecated) : 0:4 : No source location provided! Please enter a valid location.
+2022-04-24 20:38:09,573 : WARN  : ModalContext :  : Node : JSON Reader (deprecated) : 0:5 : No source location provided! Please enter a valid location.
+2022-04-24 20:38:09,583 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: Error: Practical 7&8 0 loaded with errors
+2022-04-24 20:38:09,583 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Error: Practical 7&8 0
+2022-04-24 20:38:09,583 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Tableau Writer" not available from extension "KNIME Tableau Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.tableau.hyperapi" is not installed)
+2022-04-24 20:39:47,232 : WARN  : ModalContext :  : Node : Excel Reader (XLS) (deprecated) : 0:4 : No source location provided! Please enter a valid location.
+2022-04-24 20:39:47,236 : WARN  : ModalContext :  : Node : JSON Reader (deprecated) : 0:5 : No source location provided! Please enter a valid location.
+2022-04-24 20:40:08,684 : WARN  : main :  : Node : Excel Reader (XLS) (deprecated) : 0:121 : No source location provided! Please enter a valid location.
+2022-04-24 20:40:23,065 : WARN  : main :  : Node : Excel Reader (XLS) (deprecated) : 0:122 : No source location provided! Please enter a valid location.
+2022-04-24 20:40:27,873 : WARN  : main :  : Node : Excel Reader (XLS) (deprecated) : 0:123 : No source location provided! Please enter a valid location.
+2022-04-24 20:40:39,907 : WARN  : main :  : Node : JSON Reader (deprecated) : 0:123 : No source location provided! Please enter a valid location.
+2022-04-24 20:42:50,926 : WARN  : main :  : Node : Column Resorter : 0:124 : All columns stay in same order.
+2022-04-24 20:44:51,874 : WARN  : main :  : WrappedNodeDialog : Excel Reader (XLS) (deprecated) : 0:121 : failed to apply settings: Preview table is out of sync with current settings. Please refresh.
+org.knime.core.node.InvalidSettingsException: Preview table is out of sync with current settings. Please refresh.
+	at org.knime.ext.poi2.node.read4.XLSReaderNodeDialog.saveSettingsTo(XLSReaderNodeDialog.java:1529)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-04-24 20:46:44,410 : ERROR : KNIME-Worker-8-Excel Reader (XLS) (deprecated) 0:121 :  : Node : Excel Reader (XLS) (deprecated) : 0:121 : Execute failed: Encountered duplicate row ID "2017-10-23"
+org.knime.core.util.DuplicateKeyException: Encountered duplicate row ID "2017-10-23"
+	at org.knime.core.data.container.BufferedDataContainerDelegate.checkAsyncWriteThrowable(BufferedDataContainerDelegate.java:377)
+	at org.knime.core.data.container.BufferedDataContainerDelegate.addRowToTableAsynchronously(BufferedDataContainerDelegate.java:576)
+	at org.knime.core.data.container.BufferedDataContainerDelegate.addRowToTable(BufferedDataContainerDelegate.java:527)
+	at org.knime.core.data.container.DataContainer.addRowToTable(DataContainer.java:307)
+	at org.knime.core.node.streamable.BufferedDataTableRowOutput.push(BufferedDataTableRowOutput.java:79)
+	at org.knime.ext.poi2.node.read4.ExcelTableReader.pushRows(ExcelTableReader.java:181)
+	at org.knime.ext.poi2.node.read4.ExcelTableReader.pushRowsToOutput(ExcelTableReader.java:159)
+	at org.knime.base.node.io.filehandling.FileHandlingUtil.pushRowsToOutput(FileHandlingUtil.java:140)
+	at org.knime.base.node.io.filehandling.FileHandlingUtil.createDataTable(FileHandlingUtil.java:104)
+	at org.knime.ext.poi2.node.read4.XLSReaderNodeModel.execute(XLSReaderNodeModel.java:154)
+	at org.knime.ext.poi2.node.read4.XLSReaderNodeModel.execute(XLSReaderNodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.util.DuplicateKeyException: Encountered duplicate row ID "2017-10-23"
+	at org.knime.core.data.container.BufferedDataContainerDelegate.addRowKeyForDuplicateCheck(BufferedDataContainerDelegate.java:701)
+	at org.knime.core.data.container.BufferedDataContainerDelegate$ContainerRunnable.run(BufferedDataContainerDelegate.java:764)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-04-24 20:48:28,701 : WARN  : main :  : Node : RowID : 0:128 : No row key column selected generate a new one
+2022-04-24 20:48:30,990 : WARN  : KNIME-Worker-9-Excel Reader (XLS) (deprecated) 0:121 :  : Node : RowID : 0:128 : No row key column selected generate a new one
+2022-04-24 20:48:31,099 : WARN  : KNIME-Worker-10-Duplicate Row Filter 0:127 :  : Node : RowID : 0:128 : No row key column selected generate a new one
+2022-04-24 20:52:22,391 : ERROR : KNIME-Worker-12-String to Date&Time 0:129 :  : Node : String to Date&Time : 0:129 : Execute failed: Failed to parse date in row 'ID-2016-63535: Text '' could not be parsed at index 0
+java.lang.IllegalArgumentException: Failed to parse date in row 'ID-2016-63535: Text '' could not be parsed at index 0
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel$StringToTimeCellFactory.getCell(StringToDateTimeNodeModel.java:408)
+	at org.knime.core.data.container.SingleCellFactory.getCells(SingleCellFactory.java:105)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:575)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:495)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:412)
+	at org.knime.core.data.container.BufferedTableBackend.rearrange(BufferedTableBackend.java:153)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:432)
+	at org.knime.time.node.convert.stringtodatetime.StringToDateTimeNodeModel.execute(StringToDateTimeNodeModel.java:226)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:758)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-04-24 20:53:47,948 : WARN  : KNIME-Worker-14-String to Date&Time 0:129 :  : Node : String to Date&Time : 0:129 : 31653 rows could not be converted. Check the message in the missing cells for details.
+2022-04-24 20:54:00,444 : WARN  : KNIME-Worker-13-String to Date&Time 0:129 :  : Node : String to Date&Time : 0:129 : 31653 rows could not be converted. Check the message in the missing cells for details.
+2022-04-24 20:54:25,652 : WARN  : KNIME-Worker-12-String to Date&Time 0:129 :  : Node : String to Date&Time : 0:129 : 7034 rows could not be converted. Check the message in the missing cells for details.
+2022-04-24 20:56:55,414 : WARN  : main :  : Node : Edit Numeric Domain : 0:130 : Missing Configuration.
+2022-04-24 20:58:03,046 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:00:34,171 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:01:12,648 : WARN  : main :  : Node : Regex Split : 0:131 : Not configuration available.
+2022-04-24 21:01:45,480 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:01:46,901 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:02:30,698 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:02:31,140 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:02:56,967 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:02:58,331 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:03:47,853 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:03:48,355 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:05:24,496 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:05:26,216 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:05:31,953 : WARN  : KNIME-Worker-18-String to Date&Time 0:129 :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:05:59,502 : WARN  : main :  : Node : String Replacer : 0:131 : Selected column 'null' does not exist in input table
+2022-04-24 21:06:23,422 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:06:24,788 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:06:47,662 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:06:48,214 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:07:05,720 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:07:06,346 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:07:32,311 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:07:32,750 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:07:47,393 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:07:47,873 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:08:26,112 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:08:31,174 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:08:31,510 : WARN  : main :  : Node : Modify Date : 0:130 : Node must be configured!
+2022-04-24 21:11:41,052 : WARN  : main :  : Node : Column Rename : 0:133 : No configuration available
+2022-04-24 21:12:32,681 : WARN  : main :  : Node : String Replacer : 0:134 : Selected column 'null' does not exist in input table
+2022-04-24 21:17:32,997 : ERROR : KNIME-Worker-24-Excel Reader (XLS) (deprecated) 0:122 :  : Node : Excel Reader (XLS) (deprecated) : 0:122 : Execute failed: Encountered duplicate row ID "2018-02-27"
+org.knime.core.util.DuplicateKeyException: Encountered duplicate row ID "2018-02-27"
+	at org.knime.core.data.container.BufferedDataContainerDelegate.checkAsyncWriteThrowable(BufferedDataContainerDelegate.java:377)
+	at org.knime.core.data.container.BufferedDataContainerDelegate.addRowToTableAsynchronously(BufferedDataContainerDelegate.java:576)
+	at org.knime.core.data.container.BufferedDataContainerDelegate.addRowToTable(BufferedDataContainerDelegate.java:527)
+	at org.knime.core.data.container.DataContainer.addRowToTable(DataContainer.java:307)
+	at org.knime.core.node.streamable.BufferedDataTableRowOutput.push(BufferedDataTableRowOutput.java:79)
+	at org.knime.ext.poi2.node.read4.ExcelTableReader.pushRows(ExcelTableReader.java:181)
+	at org.knime.ext.poi2.node.read4.ExcelTableReader.pushRowsToOutput(ExcelTableReader.java:159)
+	at org.knime.base.node.io.filehandling.FileHandlingUtil.pushRowsToOutput(FileHandlingUtil.java:140)
+	at org.knime.base.node.io.filehandling.FileHandlingUtil.createDataTable(FileHandlingUtil.java:104)
+	at org.knime.ext.poi2.node.read4.XLSReaderNodeModel.execute(XLSReaderNodeModel.java:154)
+	at org.knime.ext.poi2.node.read4.XLSReaderNodeModel.execute(XLSReaderNodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.util.DuplicateKeyException: Encountered duplicate row ID "2018-02-27"
+	at org.knime.core.data.container.BufferedDataContainerDelegate.addRowKeyForDuplicateCheck(BufferedDataContainerDelegate.java:701)
+	at org.knime.core.data.container.BufferedDataContainerDelegate$ContainerRunnable.run(BufferedDataContainerDelegate.java:764)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-04-24 21:19:14,329 : ERROR : KNIME-Worker-27-Excel Reader (XLS) (deprecated) 0:122 :  : Node : Excel Reader (XLS) (deprecated) : 0:122 : Execute failed: Encountered duplicate row ID "2018-02-27"
+org.knime.core.util.DuplicateKeyException: Encountered duplicate row ID "2018-02-27"
+	at org.knime.core.data.container.BufferedDataContainerDelegate.checkAsyncWriteThrowable(BufferedDataContainerDelegate.java:377)
+	at org.knime.core.data.container.BufferedDataContainerDelegate.addRowToTableAsynchronously(BufferedDataContainerDelegate.java:576)
+	at org.knime.core.data.container.BufferedDataContainerDelegate.addRowToTable(BufferedDataContainerDelegate.java:527)
+	at org.knime.core.data.container.DataContainer.addRowToTable(DataContainer.java:307)
+	at org.knime.core.node.streamable.BufferedDataTableRowOutput.push(BufferedDataTableRowOutput.java:79)
+	at org.knime.ext.poi2.node.read4.ExcelTableReader.pushRows(ExcelTableReader.java:181)
+	at org.knime.ext.poi2.node.read4.ExcelTableReader.pushRowsToOutput(ExcelTableReader.java:159)
+	at org.knime.base.node.io.filehandling.FileHandlingUtil.pushRowsToOutput(FileHandlingUtil.java:140)
+	at org.knime.base.node.io.filehandling.FileHandlingUtil.createDataTable(FileHandlingUtil.java:104)
+	at org.knime.ext.poi2.node.read4.XLSReaderNodeModel.execute(XLSReaderNodeModel.java:154)
+	at org.knime.ext.poi2.node.read4.XLSReaderNodeModel.execute(XLSReaderNodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.util.DuplicateKeyException: Encountered duplicate row ID "2018-02-27"
+	at org.knime.core.data.container.BufferedDataContainerDelegate.addRowKeyForDuplicateCheck(BufferedDataContainerDelegate.java:701)
+	at org.knime.core.data.container.BufferedDataContainerDelegate$ContainerRunnable.run(BufferedDataContainerDelegate.java:764)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-04-24 21:21:51,171 : WARN  : main :  : Node : JSON Transformer : 0:141 : Please specify the output column's name
+2022-04-24 21:22:28,947 : WARN  : main :  : WrappedNodeDialog : JSON Transformer : 0:141 : failed to apply settings: No name specified for the new column.
+org.knime.core.node.InvalidSettingsException: No name specified for the new column.
+	at org.knime.json.node.util.RemoveOrAddColumnDialog.saveSettingsTo(RemoveOrAddColumnDialog.java:304)
+	at org.knime.json.node.patch.apply.JSONPatchApplyNodeDialog.saveSettingsTo(JSONPatchApplyNodeDialog.java:146)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-04-24 21:24:34,225 : WARN  : main :  : Node : Row Filter : 0:143 : No row filter specified
+2022-04-24 21:26:05,120 : WARN  : main :  : Node : RowID : 0:144 : No row key column selected generate a new one
+2022-04-24 21:26:15,152 : WARN  : main :  : Node : RowID : 0:144 : No row key column selected generate a new one
+2022-04-24 21:26:15,587 : WARN  : main :  : Node : RowID : 0:144 : No row key column selected generate a new one
+2022-04-24 21:26:36,070 : WARN  : main :  : Node : Column Rename : 0:145 : No configuration available
+2022-04-24 21:33:13,375 : WARN  : KNIME-Worker-34-Create Table Structure 0:148 :  : Node : Create Table Structure : 0:148 : Node created an empty data table.
+2022-04-24 21:36:02,439 : WARN  : KNIME-Worker-36-Create Table Structure 0:148 :  : Node : Create Table Structure : 0:148 : Node created an empty data table.
+2022-04-24 21:36:02,441 : ERROR : KNIME-Worker-37-Column Appender 0:146 :  : Node : Column Appender : 0:146 : Execute failed: Tables can't be joined, non matching row counts: 296 vs. 0
+java.lang.IllegalArgumentException: Tables can't be joined, non matching row counts: 296 vs. 0
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:283)
+	at org.knime.core.data.container.BufferedTableBackend.append(BufferedTableBackend.java:145)
+	at org.knime.core.node.ExecutionContext.createJoinedTable(ExecutionContext.java:611)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.joinTablesWithIdenticalKeys(ColumnAppender2NodeModel.java:251)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.execute(ColumnAppender2NodeModel.java:181)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:758)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-04-24 21:36:11,274 : WARN  : KNIME-Worker-38-Column Appender 0:146 :  : Node : Column Appender : 0:146 : Table 1 is shorter than the longest table. Corresponding columns were filled using missing values.
+2022-04-24 21:37:56,625 : WARN  : main :  : WrappedNodeDialog : Constant Value Column : 0:152 : failed to apply settings: Error on creating 'Boolean value' from input string: '1'
+org.knime.core.node.InvalidSettingsException: Error on creating 'Boolean value' from input string: '1'
+	at org.knime.base.node.preproc.constantvalue.ConstantValueColumnNodeDialogPane.saveSettingsTo(ConstantValueColumnNodeDialogPane.java:322)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-04-24 21:40:07,343 : ERROR : KNIME-Worker-39-Concatenate 0:153 :  : Node : Concatenate : 0:153 : Execute failed: Duplicate row key "ID-2015-17286" in table with index 1
+java.lang.IllegalArgumentException: Duplicate row key "ID-2015-17286" in table with index 1
+	at org.knime.core.data.container.ConcatenateTable.checkForDuplicates(ConcatenateTable.java:335)
+	at org.knime.core.data.container.ConcatenateTable.create(ConcatenateTable.java:319)
+	at org.knime.core.data.container.BufferedTableBackend.concatenate(BufferedTableBackend.java:134)
+	at org.knime.core.node.ExecutionContext.createConcatenateTable(ExecutionContext.java:567)
+	at org.knime.base.node.preproc.append.row.AppendedRowsNodeModel.execute(AppendedRowsNodeModel.java:202)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:758)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-04-24 21:41:28,837 : ERROR : KNIME-Worker-40-Concatenate 0:153 :  : Node : Concatenate : 0:153 : Execute failed: Duplicate row key "ID-2015-17286" in table with index 1
+java.lang.IllegalArgumentException: Duplicate row key "ID-2015-17286" in table with index 1
+	at org.knime.core.data.container.ConcatenateTable.checkForDuplicates(ConcatenateTable.java:335)
+	at org.knime.core.data.container.ConcatenateTable.create(ConcatenateTable.java:319)
+	at org.knime.core.data.container.BufferedTableBackend.concatenate(BufferedTableBackend.java:134)
+	at org.knime.core.node.ExecutionContext.createConcatenateTable(ExecutionContext.java:567)
+	at org.knime.base.node.preproc.append.row.AppendedRowsNodeModel.execute(AppendedRowsNodeModel.java:202)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:758)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-04-24 21:42:22,385 : WARN  : main :  : Node : Joiner : 0:156 : No join columns passed.
+2022-04-24 21:42:35,054 : WARN  : main :  : WrappedNodeDialog : Joiner : 0:156 : failed to apply settings: Please define at least one joining column pair.
+org.knime.core.node.InvalidSettingsException: Please define at least one joining column pair.
+	at org.knime.base.node.preproc.joiner3.Joiner3Settings.validateSettings(Joiner3Settings.java:385)
+	at org.knime.base.node.preproc.joiner3.Joiner3NodeModel.validateSettings(Joiner3NodeModel.java:275)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:692)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1100)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:913)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1975)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1087)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:510)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4441)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1324)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4227)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3837)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:945)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:852)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:147)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5048)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4441)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1324)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4227)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3837)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:183)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2022-04-24 21:43:37,632 : WARN  : main :  : Node : String Replacer : 0:157 : Selected column 'null' does not exist in input table
+2022-04-24 21:44:41,533 : WARN  : KNIME-Worker-42-Missing Value 0:157 :  : Node : Missing Value : 0:157 : Column "Ship Date" still contains missing values.
+Column "Order Date" still contains missing values.
+Column "Ship Mode" still contains missing values.
+Column "Segment" still contains missing values.
+Column "City" still contains missing values.
+Column "State" still contains missing values.
+Column "Country" still contains missing values.
+Column "Region" still contains missing values.
+Column "Category" still contains missing values.
+Column "Sub-Category" still contains missing values.
+Column "Product Name" still contains missing values.
+Column "Sales" still contains missing values.
+Column "Quantity" still contains missing values.
+Column "Disc" still contains missing values.
+Column "Profit" still contains missing values.

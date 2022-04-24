@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+<met:element form="text" read-only="false" name="Author">ce920109</met:element>
+<met:element form="date" read-only="false" name="Creation Date">1/2/2021/12:00:01 +02:00</met:element>
+<met:element form="multiline" read-only="false" name="Comments">CS3DV20 - Practical 9
+
+The objective of this practical is to process and integrate orders data to be analysed in Tableau.&#13;
+&#13;
+Data Sources Description:&#13;
+orders_2015-2017: raw orders data&#13;
+orders_2018: not returned orders of 2018&#13;
+returns: orders that have been returned</met:element>
+</met:KNIMEMetaInfo>

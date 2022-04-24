@@ -1,0 +1,23 @@
+Drop rowId, RowId CustomerID and CustomerName ProductId DROP OK
+
+
+Dates cut down to date and not millisecond					OK
+
+
+
+
+
+Profit,Sales round 2										OK
+
+discound to disc											OK
+
+
+How to derive productName? -> not provided
+	if empty -> not provided
+	if 'no_product' not provided
+
+
+Returns-Json
+	2 attributes per document
+	ascosiation by ID
+
